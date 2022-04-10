@@ -18,6 +18,14 @@ export class AppComponent {
     ]
    }
   addQuote(title: HTMLInputElement, link: HTMLInputElement){
-    console.log(title.value)
+    this.quote.push(new Quotes(title.value, link.value));
+    title.value = '';
+    link.value = '';
+  }
+
+  //Function to sort quotes based on Votes
+
+  sortQuotes(): Quotes[] {
+    return this.quote.sort((a: Quotes, b: Quotes)=>b.votes - a.votes);
   }
 }
