@@ -6,7 +6,7 @@
 
 .points {
     aspect-ratio: 1/0.7;
-    background-color: rgba(128, 128, 128, 0.3);
+    background-color: rgba(112, 23, 255, 0.3);
     border-radius: 0.2rem;
     margin: 0.5rem;
     display: flex;
@@ -14,6 +14,8 @@
     justify-content: center;
     align-items: center;
     flex: 0.8;
+    color: rgb(0, 119, 255);
+    font-weight: 600;
 }
 
 .details {
@@ -29,4 +31,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Upvote and Downvote Styles */
+
+.upvote {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(43, 255, 0);
+    cursor: pointer;
+}
+
+.downvote {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
 }
