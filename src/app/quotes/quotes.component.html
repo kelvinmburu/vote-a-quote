@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<div class="container">
-  <div class="points">
-    <div> {{quote.votes}} </div>
-    <div>Votes</div>
-  </div>
-  <div class="details">
-    <div>
-      <a href="{{quote.link}}">{{quote.title}}</a>
-      <div>{{quote.link}}</div>
+  <div class="container">
+    <div class="points">
+      <div>{{ quote.votes }}</div>
+      <div>Votes</div>
     </div>
-    <div class="vote">
-      <div class="upvote" (click)="voteUp()">Upvote</div>
-      <div class="downvote" (click)="voteDown()">Downvote</div>
+    <div class="details">
+      <div>
+        <a href="{{ quote.link }}">{{ quote.title }}</a>
+        <div>{{ quote.link }}</div>
+      </div>
+      <div class="vote">
+        <div class="upvote" (click)="voteUp()">Upvote</div>
+        <div class="downvote" (click)="voteDown()">Downvote</div>
+      </div>
     </div>
   </div>
-</div>
-
 </html>
-
