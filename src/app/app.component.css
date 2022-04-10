@@ -8,15 +8,16 @@
     border: .5px solid rgb(199, 199, 199);
 }
 
-.title_container, .link_container {
+.title_container, .link_container, .person-name {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 0.4rem;
 }
 
-.title_container>input, .link_container>input {
+.title_container>input, .link_container>input, .person-name>input {
     height: 2.5rem;
 }
+
 
 .submit_btn {
     display: block;

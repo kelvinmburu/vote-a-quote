@@ -10,6 +10,7 @@
 
 <!-- Quote Input Field Section -->
 
+
 <div class="container-fluid">
   <div class="page-header">
     <h2>Vote<span class="main-text"> a Quote</span></h2>
@@ -19,12 +20,16 @@
 <div class="container">
   <h3>Post Quote</h3>
   <div class="title_container">
-    <label for="title">Quote Title : </label>
+    <label for="title">Author Name : </label>
     <input type="text" id="title" #title>
   </div>
   <div class="link_container">
     <label for="link">Quote Text :</label>
     <input type="text" id="link" #link>
+  </div>
+  <div class="person-name">
+    <label for="title">Name :</label>
+    <input type="text" id="name" #name>
   </div>
   <button class="submit_btn" (click)="addQuote(title, link)">Add Quote</button>
 </div>
