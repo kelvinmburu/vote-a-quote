@@ -1,16 +1,16 @@
 <div class="container">
   <div class="points">
-    <div>3</div>
+    <div> {{quote.votes}} </div>
     <div>Votes</div>
   </div>
   <div class="details">
     <div>
-      <a href="">Quotes</a>
-      <div> Quotes</div>
+      <a href="{{quote.link}}">{{quote.title}}</a>
+      <div>{{quote.link}}</div>
     </div>
     <div class="vote">
-      <div>Upvote</div>
-      <div>Downvote</div>
+      <div (click)="voteUp()">Upvote</div>
+      <div (click)="voteDown()">Downvote</div>
     </div>
   </div>
 </div>
