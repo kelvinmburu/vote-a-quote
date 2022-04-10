@@ -32,5 +32,5 @@
 <!-- Quotes Component -->
 
 <div>
-  <app-quotes *ngFor="let quote of quote"></app-quotes>
+  <app-quotes *ngFor="let quote of sortQuotes()" [quote]="quote"></app-quotes>
 </div>
