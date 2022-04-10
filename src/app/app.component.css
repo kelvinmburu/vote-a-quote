@@ -25,3 +25,62 @@
     padding: 10px 25px;
     cursor: pointer;
 }
+
+/* Footer Section Styling */
+
+footer {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p:nth-child(1) {
+    color: #fff;
+    font-size: 29px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  footer p:nth-child(2) {
+    color: #fff;
+    font-size: 18px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: crimson;
+    border-radius: 50%;
+    margin: 23px 9px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  
+  .cpr {
+    position: absolute;
+    color: crimson;
+    bottom: 35px;
+    font-size: 14px;
+  }
