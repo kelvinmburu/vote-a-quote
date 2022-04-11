@@ -1,11 +1,13 @@
 export class Quotes {
-    title: string;
+    title: string
     link: string
+    name: string
     votes: number
 
-    constructor(title: string, link: string, votes?: number) {
+    constructor(title: string, link: string, name: string, votes?: number) {
         this.title = title;
         this.link = link;
+        this.name = name;
         this.votes = votes || 0;
     }
 
