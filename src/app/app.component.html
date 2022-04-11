@@ -1,99 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Vote a Quote</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <title>Vote a Quote</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-light bg-light" role="navigation">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img
-          src="../assets/logo.png"
-          alt=""
-          width="110"
-          height="117"
-          class="d-inline-block align-text-top"
-        />
-      </a>
-    </div>
-  </nav>
-  <!-- End of Navbar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-  <!-- Quote Input Field Section -->
-
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-light" role="navigation">
   <div class="container-fluid">
-    <div class="page-header">
-      <h2>Vote<span class="main-text"> a Quote</span></h2>
-    </div>
+    <a class="navbar-brand" href="#">
+      <img src="../assets/logo.png" alt="" width="110" height="117" class="d-inline-block align-text-top" />
+    </a>
   </div>
+</nav>
+<!-- End of Navbar -->
 
-  <div class="container">
-    <h3>Post Quote</h3>
-    <div class="title_container">
-      <label for="title">Author Name : </label>
-      <input type="text" id="title" #title />
-    </div>
-    <div class="link_container">
-      <label for="link">Quote Text :</label>
-      <input type="text" id="link" #link />
-    </div>
-    <div class="person-name">
-      <label for="title">Name :</label>
-      <input type="text" id="name" #name />
-    </div>
-    <button class="submit_btn" (click)="addQuote(title, link)">
-      Add Quote
-    </button>
+<!-- Quote Input Field Section -->
+
+<div class="container-fluid">
+  <div class="page-header">
+    <h2>Vote<span class="main-text"> a Quote</span></h2>
   </div>
+</div>
 
-  <!-- Quotes Component -->
-
-  <div>
-    <app-quotes *ngFor="let quote of sortQuotes()" [quote]="quote"></app-quotes>
+<div class="container">
+  <h3>Post Quote</h3>
+  <div class="title_container">
+    <label for="title">Author Name : </label>
+    <input type="text" id="title" #title />
   </div>
+  <div class="link_container">
+    <label for="link">Quote Text :</label>
+    <input type="text" id="link" #link />
+  </div>
+  <div class="person-name">
+    <label for="title">Name :</label>
+    <input type="text" id="name" #name />
+  </div>
+  <button class="submit_btn" (click)="addQuote(title, link)">
+    Add Quote
+  </button>
+</div>
 
-  <!-- Footer -->
+<!-- Quotes Component -->
 
-  <footer id="connect">
-    <p>Kelvin Mburu</p>
-    <p>I'm social! Let's connect on social.</p>
-    <div class="social-icons">
-      <a href="https://web.facebook.com/Mburuh.Kelvin/"
-        ><i class="fab fa-facebook"></i
-      ></a>
-      <a href="https://twitter.com/mburukelvin_"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a href="https://github.com/kelvinmburu"><i class="fab fa-github"></i></a>
-    </div>
-    <p class="cpr">Made with love by Kelvin Mburu &copy 2022</p>
-  </footer>
+<div>
+  <app-quotes *ngFor="let quote of sortQuotes()" [quote]="quote"></app-quotes>
+</div>
+
+<!-- Footer -->
+
+<footer id="connect">
+  <p>Kelvin Mburu</p>
+  <p>I'm social! Let's connect on social.</p>
+  <div class="social-icons">
+    <a href="https://web.facebook.com/Mburuh.Kelvin/"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/mburukelvin_"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/kelvinmburu"><i class="fab fa-github"></i></a>
+  </div>
+  <p class="cpr">Made with love by Kelvin Mburu &copy 2022</p>
+</footer>
+
 </html>
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body></body>
+
 </html>
