@@ -1,8 +1,8 @@
+
 .container {
-  width: 25%;
   margin: 0 auto;
   background-color: aliceblue;
-  padding: 0 18rem 1rem;
+  padding: 0 10rem 1rem;
   border-radius: 0.2rem;
   border: 0.5px solid rgb(199, 199, 199);
 }
@@ -24,8 +24,16 @@
 .submit_btn {
   display: block;
   margin: 0.7rem 0.5rem 0 auto;
-  padding: 10px 25px;
+  padding: 14px 60px;
   cursor: pointer;
+  border: none;
+  background: cornflowerblue;
+  color: #fff;
+  transition: all 0.5 ease;
+}
+
+.submit_btn:hover {
+  background-color: rgba(161, 48, 48, 0.933);
 }
 
 /* Footer Section Styling */
